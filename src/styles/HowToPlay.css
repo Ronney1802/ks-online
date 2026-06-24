@@ -1,0 +1,37 @@
+/* How to Play Section */
+.how-to-play {
+  background: var(--brand-dark);
+  padding: 80px 0;
+  position: relative;
+  color: var(--brand-light);
+  text-align: center;
+}
+
+.how-to-play i {
+  font-size: 1.3rem;
+  filter: drop-shadow(0 0 6px rgba(63, 169, 245, 0.6));
+  margin: 15px 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .step-card {
+    padding: 20px;
+  }
+
+  .step-number {
+    font-size: 1.5rem;
+  }
+
+  .step-icon i {
+    font-size: 1.6rem;
+  }
+
+  .step-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .step-card p {
+    font-size: 0.9rem;
+  }
+}

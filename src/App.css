@@ -1,0 +1,44 @@
+/* Css styling of common elements used in the components :-  */
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--brand-accent), transparent);
+  border-radius: 2px;
+}
+
+.section-title p {
+  color: var(--brand-light);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 15px auto 0;
+}
+
+/* Feature icon of Features anfd MobileFeatures */
+
+.feature-icon {
+  font-size: 1.3rem;
+  filter: drop-shadow(0 0 6px rgba(63, 169, 245, 0.6));
+  margin-bottom: 10px;
+}

@@ -1,0 +1,32 @@
+/* ===========================
+   Global Brand Variables
+   =========================== */
+
+:root {
+  /* Brand Palette */
+  --brand-primary: #0a2a43;       /* Deep navy for headers & accents */
+  --brand-secondary: #1f4e79;     /* Rich steel blue for gradients */
+  --brand-accent: #3fa9f5;        /* Vibrant sky blue for buttons & highlights */
+  --brand-dark: #010d1f;          /* Very dark navy background */
+  --brand-light: #e6f2fb;         /* Soft pale blue for text highlights */
+  --gold: #ffd700;                /* Gold accent for premium highlights */
+  --gold-light: #fff5cc;          /* Pale gold */
+
+  /* Text Colors */
+  --text-light: #ffffff;
+  --text-dark: #010d1f;
+  --text-muted: #a0a0a0;
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.15);
+
+  /* Shadows */
+  --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+
+  /* Neon Glow */
+  --neon-glow: 
+    0 0 10px rgba(63, 169, 245, 0.7),
+    0 0 20px rgba(63, 169, 245, 0.5),
+    0 0 30px rgba(63, 169, 245, 0.3);
+}

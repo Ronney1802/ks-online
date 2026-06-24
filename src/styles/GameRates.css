@@ -1,0 +1,37 @@
+.game-card-header i {
+  color: var(--brand-light);
+  filter: drop-shadow(0 0 6px rgba(63, 169, 245, 0.6));
+  margin-bottom : 10px;
+  font-size: 1.3rem;
+}
+
+.game-card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--brand-light);
+} 
+
+.rate-list li {
+  padding: 0.3rem 0;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.rate-list li span{
+  padding-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .game-card-title {
+    font-size: 1.2rem;
+  }
+
+  .rate-list li {
+    font-size: 0.95rem;
+  }
+}

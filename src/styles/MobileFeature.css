@@ -1,0 +1,23 @@
+/* Mobile Features Section */
+.mobile-features {
+  background: var(--brand-dark);
+  padding: 80px 0;
+  position: relative;
+  color: var(--brand-light);
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .feature-card {
+    padding: 20px;
+  }
+
+  .feature-card h3 {
+    font-size: 1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.9rem;
+  }
+}

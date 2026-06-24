@@ -1,0 +1,24 @@
+/* Footer Section */
+.footer {
+  background: var(--brand-dark);
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* Text */
+.footer p {
+  margin-bottom: 0;
+}
+
+/* Social Links */
+.social-links a {
+  color: var(--brand-accent);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  text-decoration: none;
+  color: var(--text-light);
+}
+

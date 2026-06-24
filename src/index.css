@@ -1,0 +1,12 @@
+@import './Variable.css';
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--brand-dark);
+    color: var(--text-light);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

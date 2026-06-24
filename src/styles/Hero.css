@@ -1,0 +1,167 @@
+/* ===========================
+   Hero Section
+   =========================== */
+.hero-section {
+  background: linear-gradient(
+    135deg,
+    var(--brand-primary) 60%,
+    var(--brand-secondary) 100%
+  );
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(0, 194, 191, 0.15) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(255, 215, 0, 0.1) 0%,
+      transparent 40%
+    );
+  pointer-events: none;
+}
+
+.hero-content {
+  /* position: relative;
+  z-index: 2; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  background: linear-gradient(
+    135deg,
+    var(--text-light) 0%,
+    var(--brand-accent) 100%
+  );
+  /* below webkit and text shadow properties are used together to create a glowing header text (h1) */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--brand-light);
+  line-height: 1.6;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* The below .brand-logo img{} selector will target all the img contained by the element brand-logo.
+If there are multiple .brand-logo containers and each one has an <img> inside → the CSS rule applies to all of those images.
+If only one .brand-logo container has an <img> inside → the CSS rule applies only to that single image, 
+because the selector matches only what exists in the DOM.
+*/
+.brand-logo img {
+  animation: logoFloat 6s ease-in-out infinite; /*Helps the logo to float up and down smoothly*/
+  /* If you notice the logo carefully its animating infinitely up and back to its posituion down continuesly */
+
+  filter: drop-shadow(
+    0 0 20px rgba(0, 194, 191, 0.3)
+  ); /* Adds a subtle glow around the logo */
+}
+
+/* below logoFloat keyframes tell the logo how to float :-
+1. Start at its normal position.
+2. Float upward by 50px halfway through.
+3. Return back to its normal position at the end. */
+@keyframes logoFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+
+/* ===========================
+   Features
+   =========================== */
+.hero-features {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  gap: 8px;
+  font-weight: 500;
+  color: var(--brand-light);
+  font-size: 1.35rem;
+}
+
+
+/* ===========================
+   Right Side Image
+   =========================== */
+.hero-image {
+  /* position: relative;
+  z-index: 2; */
+}
+
+.app-showcase .phone-frame {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.app-screen {
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  height: auto;
+  width: 100%;
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+@media (max-width: 767px) {
+  .hero-section {
+    padding: 0px 20px 60px 20px; /* more breathing room */
+    text-align: center; /* center text for better appeal */
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem; /* slightly smaller headline */
+    margin-bottom: 1rem; /* spacing below headline */
+  }
+
+  .hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem; /* spacing below subtext */
+  }
+
+  .hero-features {
+    margin-bottom: 5rem; /* spacing below features */
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column; /* stack buttons vertically */
+    gap: 15px; /* spacing between buttons */
+    margin-bottom: 2rem; /* spacing before footer/copyright */
+  }
+
+  .hero-buttons .btn {
+    width: 100%; /* full width buttons on mobile */
+  }
+}
+
